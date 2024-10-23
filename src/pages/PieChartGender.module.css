@@ -1,0 +1,13 @@
+/* PieChartGender.module.css */
+
+.chartContainer {
+    width: 100%;
+    height: 500px; /* Adjust the height as needed */
+    position: relative;
+  }
+  
+  .chart {
+    width: 100%;
+    height: 100%;
+  }
+  

@@ -1,0 +1,359 @@
+/* TabelPengguna.module.css */
+
+.container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #343a40;
+  }
+  
+  .editButtonContainer {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .editButton {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+  }
+  
+  .editButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .deleteButton {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c82333;
+  }
+  
+  .editForm {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  .editForm label {
+    display: block;
+    margin-bottom: 10px;
+    color: #495057;
+  }
+  
+  .editForm input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  .editForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Menambah jarak antara tombol */
+  }
+  
+  .editForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popupContent {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .closeButton {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .closeButton:hover {
+    background-color: #c82333;
+  }
+  
+  /* New styles to prevent the table from covering other content */
+  .ag-theme-alpine {
+    width: 100%; /* Ensure the table takes the full width available */
+    max-height: 400px; /* Set a max height to prevent the table from expanding too much */
+    overflow: auto; /* Add overflow auto for scrollbars if the content exceeds the max height */
+  }
+  
+  /* Additional CSS for Verification Popup */
+
+.verifyPopupContent {
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+}
+
+.verifyPopupContent h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #343a40;
+}
+
+.verifyForm {
+  margin-top: 20px;
+}
+
+.verifyForm label {
+  display: block;
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+.verifyForm input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.verifyForm button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Add space between buttons */
+}
+
+.verifyForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Ensure the popup's close button style is consistent with other popups */
+.verifyCloseButton {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.verifyCloseButton:hover {
+  background-color: #c82333;
+}
+
+/* TabelPengguna.module.css */
+
+/* Style for the Add Button */
+.addButton {
+  padding: 10px 20px;
+  background-color: #28a745; /* Green color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.addButton:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Style for the Verify Button */
+.verifikasiButton {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.verifikasiButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* Dark Mode Styles */
+/* Dark Mode Styles */
+.darkMode {
+  background-color: #343a40; /* Dark background color */
+  color: #f8f9fa; /* Light text color */
+}
+
+.darkMode .container {
+  background-color: #495057;
+  border-radius: 15px;
+}
+
+.darkMode .title {
+  color: #f8f9fa;
+}
+
+.darkMode .editButton,
+.darkMode .deleteButton,
+.darkMode .closeButton,
+.darkMode .addButton,
+.darkMode .verifikasiButton {
+  background-color: #007bff; /* Same blue color for buttons */
+  color: #fff;
+}
+
+.darkMode .editButton:hover,
+.darkMode .deleteButton:hover,
+.darkMode .addButton:hover,
+.darkMode .verifikasiButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.darkMode .editForm,
+.darkMode .verifyPopupContent {
+  background-color: #495057;
+  border: 1px solid #6c757d;
+}
+
+.darkMode .editForm label,
+.darkMode .verifyForm label {
+  color: #f8f9fa;
+}
+
+.darkMode .editForm input,
+.darkMode .verifyForm input {
+  background-color: #6c757d;
+  color: #f8f9fa;
+  border: 1px solid #6c757d;
+}
+
+.darkMode .editForm button,
+.darkMode .verifyForm button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.darkMode .editForm button:hover,
+.darkMode .verifyForm button:hover {
+  background-color: #0056b3;
+}
+
+.darkMode .popup {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.darkMode .popupContent {
+  background: #495057;
+  color: #f8f9fa;
+}
+
+.darkMode .verifyPopupContent {
+  background: #495057;
+  color: #f8f9fa;
+}
+
+/* Ensure that the table adapts to dark mode as well */
+.darkMode .ag-theme-alpine {
+  background-color: #343a40;
+  color: #f8f9fa;
+  border: 1px solid #6c757d; /* Border di sekeliling tabel untuk membedakan dari latar belakang */
+
+  /* Perbaiki padding di dalam tabel */
+  padding: 10px;
+  box-sizing: border-box; /* Pastikan padding tidak merusak layout */
+}
+
+.darkMode .ag-theme-alpine .ag-header {
+  background-color: #495057; /* Warna latar belakang header yang lebih gelap */
+  color: #f8f9fa;
+  border-bottom: 2px solid #6c757d; /* Batas jelas antara header dan isi tabel */
+}
+
+.darkMode .ag-theme-alpine .ag-row {
+  background-color: #343a40; /* Warna latar belakang untuk baris */
+  color: #f8f9fa;
+}
+
+.darkMode .ag-theme-alpine .ag-row-odd {
+  background-color: #3b434a; /* Warna yang sedikit berbeda untuk baris ganjil */
+}
+
+.darkMode .ag-theme-alpine .ag-row-hover {
+  background-color: #4e585e; /* Warna yang lebih cerah saat baris di-hover */
+}
+
+.darkMode .ag-theme-alpine .ag-cell {
+  border-bottom: 1px solid #6c757d; /* Batas antar sel */
+  padding: 10px; /* Tambahkan padding untuk menghindari isi tabel berdesakan */
+}
+
+.darkMode .ag-theme-alpine .ag-cell-value {
+  color: #f8f9fa; /* Warna teks dalam sel */
+}
+
+/* Tambahkan gaya untuk scrollbar agar lebih mudah terlihat di mode gelap */
+.darkMode .ag-theme-alpine::-webkit-scrollbar {
+  width: 12px;
+}
+
+.darkMode .ag-theme-alpine::-webkit-scrollbar-track {
+  background: #495057;
+}
+
+.darkMode .ag-theme-alpine::-webkit-scrollbar-thumb {
+  background-color: #6c757d;
+  border-radius: 10px;
+  border: 3px solid #495057; /* Buat jarak antara thumb scrollbar dan track */
+}

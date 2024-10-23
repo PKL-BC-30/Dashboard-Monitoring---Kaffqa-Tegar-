@@ -1,0 +1,305 @@
+/* Login.module.css */
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #000;
+    box-sizing: border-box;
+}
+
+.formContainer {
+    background-color: #1E1E1E;
+    max-width: 600px; /* Meningkatkan max-width */
+    padding: 60px; /* Meningkatkan padding */
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 250px;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formGroup {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.wideInputGroup {
+    width: 100%;
+}
+
+.wideInput {
+    width: 100%;
+    padding: 12px; /* Menambah padding */
+    font-size: 1rem;
+}
+
+.inputGroup img {
+    margin-right: 10px;
+}
+
+.inputGroup input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    font-size: 1rem;
+}
+
+.togglePassword {
+    cursor: pointer;
+}
+
+.forgotPassword {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.forgotPassword:hover {
+    text-decoration: underline;
+}
+
+.loginButton {
+    width: 100%;
+    padding: 12px; /* Menambah padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #FF0000;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.loginButton:hover {
+    background-color: #CC0000;
+}
+
+.googleButton {
+    width: 100%;
+    padding: 12px; /* Menambah padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.googleIcon {
+    margin-right: 10px;
+}
+
+.footerText {
+    color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footerText a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerText a:hover {
+    text-decoration: underline;
+}
+
+.contentImageContainer {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.contentImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.registerlink{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Popup Container */
+.forgotPasswordPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  /* Popup Content */
+  .popupContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Popup Title */
+  .popupContent h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Form Group */
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .formGroup label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .formGroup input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .formGroup input:focus {
+    border-color: #3498db;
+  }
+  
+  /* Button Group */
+  .buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  /* Konfirmasi Button */
+  .resetButton {
+    flex: 1;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resetButton:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Cancel Button */
+  .cancelButton {
+    flex: 1;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .verificationPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+  
+  .cancelButton:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .forgotPasswordPopup {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .resetButton,
+    .cancelButton {
+      font-size: 13px;
+      padding: 8px;
+    }
+  }
+  
+  
